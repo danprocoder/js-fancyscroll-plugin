@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JavaScript custom scrollbar test</title>
+        <script src="js/scroll-test.js"></script>
+        <script>
+        addEventCallback(window, 'load', function() {
+            fancyscroll.init();
+
+            window.scrollWindow = document.getElementById('scrollWindow').fancyscroll;
+            var onFancyScroll = function(scrollProperty) {
+                console.log(scrollProperty.orientation + ', '
+                    + (typeof scrollProperty.scrollY == 'number' ? scrollProperty.scrollY : scrollProperty.scrollX));
+            }
+            
+            window.scrollWindow.addScrollListener(onFancyScroll);
+        });
+        </script>
+		<style>
+        body {
+            font-family: Arial;
+            font-size: 14px;
+            line-height: 150%;
+            color: #444444;
+            padding: 0 0 0 0;
+            margin: 0;
+            background: #f9f9f9;
+        }
+        
+		.scroll-window {
+			width: 250px;
+			height: 250px;
+			border: 1px solid #e7e7e7;
+			border-radius: 3px;
+			float: left;
+			margin-left: 20px;
+            margin-top: 20px;
+			padding: 10px;
+            background: #ffffff;
+		}
+        .buttons {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        @media screen and (max-width:600px) {
+        	.scroll-window {
+        		float: none;
+        	}
+        }
+		</style>
+	</head>
+	<body>
+		<div class="scroll-window scroll-vertical" id="firstScrollWindow">Holyfill Hospital was established in 2009 and is registered with Corporate Affairs Commission. We are a specialist healthcare provider located in the heart of Agric, Ikorodu area in Lagos State.
+Holyfill Hospital is aimed at providing a top-world class medical and allied services to clients using the best professionals available.
+Holyfill Hospital is a private hospital duly registered with Corporate Affairs Commission, Health Facility Monitoring and Accreditation Agency (HEFAMA), Lagos and NHIS with registration number LA/1561/P.
+Our facility is a twenty-five (25) bedded - hospital, all room ensuite and there is no general ward.
+Holyfill Hospital has grown in leaps and bounds over eight year of existence due to the total commitment and dedication of the promoters and staff, and the high level of reputation and customer goodwill enjoyed.
+The philosophy of the hospital is to provide excellent medical care to all people in the community.
+Today, the hospital has experienced significant transformation and still growing. The company enjoys tremendous goodwill and occupies an enviable position as a strong market leader amongst private hospitals in Lagos.
+We are strategically located in the heart of Agric, Ikorodu Lagos.
+OUR MISSION
+Our mission is to contribute effectively to the rapid development of health care delivery services in our community.
+OUR VISION
+Our vision is to set a standard pedestal for qualitative health care delivery with high measurable performance.
+OUR CORE VALUES
+We, the employees of Holyfill Hospital Limited, are committed personally and organizationally in carrying out the following:
+Positive Attitudes: Maintain a friendly and pleasant atmosphere and bring enthusiasm to our work.
+Professional Development: Continually increase our personal skills and knowledge to provide the highest quality service.
+Respect: Treat each other, patients and staff with mutual respect, understanding and kindness.
+Teaching: Increase our ability to teach students and staff through a variety of educational models.
+Caring: Working within what can be a delicate and sensitive industry, we endeavor to make patients as comfortable and at ease as possible, understanding their needs, responding to their concerns and offering the highest level of personal service with attentive and compassionate staff.
+Conscientious: Whilst striving to deliver optimum commercial results, The Holyfill Hospital Limited understands its responsibilities within the community and society as a whole, and we undertake numerous CSR initiatives to give opportunities for the less fortunate to receive both treatment and employment prospects.
+Excellence: We strive to out-perform the market in every aspect of daily work life, setting the highest standards in treatments, patient care and service.
+Honesty: In all facts of the business, we are open and honest with our patients at all times, providing the maximum amount of information available. This allows them to make informed decisions and receive the best possible type of treatment for their individual needs, whilst at the same time managing their expectations.
+Safety: Operating in a highly technical industry, we pride ourselves on attention to detail with regards to safety and reliability, prioritizing the wellbeing of patients and staff at all times and going above and beyond to ensure the application of the most stringent safety standards.
+ACCREDITATION
+Holyfill Hospital is duly registered with Corporate Affairs Commission, Health Facility Monitoring and Accreditation Agency (HEFAMA), Lagos and NHIS with registration number LA/1561/P.</div>
+<div class="scroll-window scroll-vertical scroll-horizontal" id="scrollWindow">gggggggoeuoaieunfueoinaeoafueufnaeuifoieubfuiabeiuogbaeuibgeiubgjanljkdnaopebfiuoaebiugebiugabjdknajegeioubgiuebaijnegjnaogelalekajeoaboeoaieboeHolyfill Hospital was established in 2009 and is registered with Corporate Affairs Commission. We are a specialist healthcare provider located in the heart of Agric, Ikorodu area in Lagos State.
+Holyfill Hospital is aimed at providing a top-world class medical and allied services to clients using the best professionals available.
+Holyfill Hospital is a private hospital duly registered with Corporate Affairs Commission, Health Facility Monitoring and Accreditation Agency (HEFAMA), Lagos and NHIS with registration number LA/1561/P.
+Our facility is a twenty-five (25) bedded - hospital, all room ensuite and there is no general ward.
+Holyfill Hospital has grown in leaps and bounds over eight year of existence due to the total commitment and dedication of the promoters and staff, and the high level of reputation and customer goodwill enjoyed.
+The philosophy of the hospital is to provide excellent medical care to all people in the community.
+Today, the hospital has experienced significant transformation and still growing. The company enjoys tremendous goodwill and occupies an enviable position as a strong market leader amongst private hospitals in Lagos.
+We are strategically located in the heart of Agric, Ikorodu Lagos.
+OUR MISSION
+Our mission is to contribute effectively to the rapid development of health care delivery services in our community.
+OUR VISION
+Our vision is to set a standard pedestal for qualitative health care delivery with high measurable performance.
+OUR CORE VALUES
+We, the employees of Holyfill Hospital Limited, are committed personally and organizationally in carrying out the following:
+Positive Attitudes: Maintain a friendly and pleasant atmosphere and bring enthusiasm to our work.
+Professional Development: Continually increase our personal skills and knowledge to provide the highest quality service.
+Respect: Treat each other, patients and staff with mutual respect, understanding and kindness.
+Teaching: Increase our ability to teach students and staff through a variety of educational models.
+Caring: Working within what can be a delicate and sensitive industry, we endeavor to make patients as comfortable and at ease as possible, understanding their needs, responding to their concerns and offering the highest level of personal service with attentive and compassionate staff.
+Conscientious: Whilst striving to deliver optimum commercial results, The Holyfill Hospital Limited understands its responsibilities within the community and society as a whole, and we undertake numerous CSR initiatives to give opportunities for the less fortunate to receive both treatment and employment prospects.
+Excellence: We strive to out-perform the market in every aspect of daily work life, setting the highest standards in treatments, patient care and service.
+Honesty: In all facts of the business, we are open and honest with our patients at all times, providing the maximum amount of information available. This allows them to make informed decisions and receive the best possible type of treatment for their individual needs, whilst at the same time managing their expectations.
+Safety: Operating in a highly technical industry, we pride ourselves on attention to detail with regards to safety and reliability, prioritizing the wellbeing of patients and staff at all times and going above and beyond to ensure the application of the most stringent safety standards.
+ACCREDITATION
+Holyfill Hospital is duly registered with Corporate Affairs Commission, Health Facility Monitoring and Accreditation Agency (HEFAMA), Lagos and NHIS with registration number LA/1561/P.</div>
+	<div class="scroll-window scroll-vertical scroll-horizontal ">a</div>
+    <div style="clear:both"></div>
+	<div class="buttons">
+        <button onclick="scrollWindow.scrollToBottom();">Scroll to bottom.</button>
+        <button onclick="scrollWindow.scrollToTop();">Scroll to top.</button>
+        <button onclick="scrollWindow.scrollToLeft();">Scroll to left.</button>
+        <button onclick="scrollWindow.scrollToRight();">Scroll to right.</button>
+    </div>
+    </body>
+</html>

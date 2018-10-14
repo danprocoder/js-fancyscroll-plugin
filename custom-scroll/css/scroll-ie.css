@@ -1,0 +1,71 @@
+.scroll-window {
+	overflow: hidden;
+}
+
+.scroll-window .inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.scroll-window .scroll-content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-width: 100%;
+}
+
+.scroll-window .scrollbar-container {
+	position: absolute;
+	border-radius: 20px;
+	background: #f3f3f3;
+}
+
+.scroll-window .scrollbar-container.expanded {
+	background: #efefef;
+}
+
+.scroll-window .scrollbar-container.scrollbar-vertical-container {
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 2px;
+}
+
+.scroll-window .scrollbar-container.scrollbar-vertical-container.expanded {
+	width: 8px;
+}
+
+.scroll-window .scrollbar-container.scrollbar-horizontal-container {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+}
+
+.scroll-window .scrollbar-container.scrollbar-horizontal-container.expanded {
+	height: 8px;
+}
+
+.scroll-window .scrollbar-container .scrollbar {
+	position: absolute;
+	background: #dfdfdf;
+	border-radius: 100px;
+}
+
+.scroll-window .scrollbar-container.scrollbar-vertical-container .scrollbar {
+	width: 100%;	
+}
+
+.scroll-window .scrollbar-container.scrollbar-horizontal-container .scrollbar {
+	height: 100%;
+}
+
+.scroll-window .scrollbar-container.expanded .scrollbar {
+	background: #bbbbbb;
+}
+
+.scroll-window .scrollbar-container.expanded .scrollbar:hover {
+    background: #999999;
+}
