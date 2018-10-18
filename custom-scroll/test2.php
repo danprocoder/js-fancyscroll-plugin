@@ -8,6 +8,8 @@
 			fancyscroll.init();
 		}
 		</script>
+		<link rel="stylesheet" type="text/css" href="css/scroll.css" />
+		<link rel="stylesheet" type="text/css" href="css/scroll-ie.css" />
 		<style>
 		#side_chat {
 			font-family: Arial;
